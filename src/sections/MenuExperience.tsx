@@ -285,7 +285,7 @@ function MenuCard({ item, onAdd }: { item: MenuItem; onAdd: (item: MenuItem) => 
 /* ──────────────────────────────────────────────────────────────────────────────
    SWIPE HINT — tiny animated label on mobile, disappears after first scroll
 ────────────────────────────────────────────────────────────────────────────── */
-function SwipeHint({ trackRef }: { trackRef: React.RefObject<HTMLDivElement> }) {
+function SwipeHint({ trackRef }: { trackRef: React.RefObject<HTMLDivElement | null> }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
