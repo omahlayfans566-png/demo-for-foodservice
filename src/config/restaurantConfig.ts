@@ -2,7 +2,7 @@ export type ThemeKey = 'ember' | 'midnight' | 'ivory' | 'citrus';
 
 export const restaurantConfig = {
   brandName: 'NOVA',
-  tagline: 'THE FUTURE OF DINING ONLINE.',
+  tagline: 'PREMIUM NIGERIAN DINING.',
   positioning: 'Restaurant Digital Experience',
   creator: 'Afolayan Precious',
   disclosure:
@@ -12,16 +12,18 @@ export const restaurantConfig = {
     phone: '+234 000 000 0000',
     whatsapp: '+234 000 000 0000',
     email: 'hello@example.com',
-    address: 'Configurable location for your restaurant',
+    address: 'Victoria Island, Lagos, Nigeria',
     instagram: '@novarestaurant',
     tiktok: '@novarestaurant',
   },
-  hours: ['Mon-Thu 10:00-22:00', 'Fri-Sun 10:00-00:00'],
+  hours: ['Mon–Thu 11:00–22:00', 'Fri–Sun 11:00–00:00'],
   links: ['Experience', 'Menu', 'Gallery', 'Reserve', 'Order'],
+  // Nigerian jollof rice spread with proteins — warm, smoky, rich
   heroImage:
-    'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1800&q=82',
+    'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1800&q=85',
+  // Grilled chicken / peppered protein hero plate
   signatureImage:
-    'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1800&q=82',
+    'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1800&q=85',
 };
 
 export const themes: Record<
@@ -36,30 +38,30 @@ export const themes: Record<
 > = {
   ember: {
     label: 'Ember',
-    accent: '#d65f2f',
-    accentSoft: '#f0a56a',
-    surface: '#100907',
+    accent: '#e8622a',
+    accentSoft: '#f59460',
+    surface: '#0f0a07',
     text: '#f7efe4',
   },
   midnight: {
     label: 'Midnight',
-    accent: '#6ec6c8',
-    accentSoft: '#9bd7cf',
-    surface: '#070b12',
+    accent: '#5ec4b0',
+    accentSoft: '#93d8ca',
+    surface: '#060c10',
     text: '#edf7f6',
   },
   ivory: {
     label: 'Ivory',
-    accent: '#c59d52',
-    accentSoft: '#ead2a0',
-    surface: '#f2eadc',
-    text: '#17120d',
+    accent: '#c89840',
+    accentSoft: '#e8cc88',
+    surface: '#f0e8da',
+    text: '#16110c',
   },
   citrus: {
     label: 'Citrus',
-    accent: '#b4d330',
-    accentSoft: '#e0ed8a',
-    surface: '#0b1008',
-    text: '#f4f7e7',
+    accent: '#c8d830',
+    accentSoft: '#dfe87a',
+    surface: '#090f04',
+    text: '#f4f7e8',
   },
 };

@@ -1,3 +1,4 @@
+import { Reveal } from '../components/Reveal';
 import type { ThemeKey } from '../config/restaurantConfig';
 import { themes } from '../config/restaurantConfig';
 import { cn } from '../lib/cn';
@@ -13,51 +14,105 @@ export function Customization({ activeTheme, onThemeChange }: CustomizationProps
 
   return (
     <section className="section bg-ink text-paper">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div>
-          <p className="eyebrow text-[var(--accent)]">Brand System</p>
-          <h2 className="section-title mt-4">BUILT AROUND YOUR BRAND.</h2>
-          <p className="mt-6 text-xl leading-8 text-paper/66">
-            Every restaurant gets its own identity: colors, logo, menu, photography, typography, contact information,
-            location, opening hours, ordering, and reservations.
-          </p>
-          <div className="mt-8">
-            <p className="text-xs uppercase tracking-[0.22em] text-paper/44">Brand Color</p>
-            <div className="mt-4 flex flex-wrap gap-3" role="radiogroup" aria-label="Brand color">
-              {options.map(([key, theme]) => (
-                <button
-                  key={key}
-                  role="radio"
-                  aria-checked={activeTheme === key}
-                  onClick={() => onThemeChange(key)}
-                  className={cn(
-                    'flex items-center gap-3 rounded-full border px-4 py-3 text-sm transition',
-                    activeTheme === key ? 'border-white bg-white text-ink' : 'border-white/14 bg-white/[0.04] text-paper',
-                  )}
-                >
-                  <span className="h-4 w-4 rounded-full" style={{ background: theme.accent }} />
-                  {theme.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="border border-white/12 p-4" style={{ background: current.surface, color: current.text }}>
-          <div className="flex items-center justify-between border-b border-current/15 pb-5">
-            <strong className="text-2xl tracking-[0.24em]">NOVA</strong>
-            <span className="rounded-full px-3 py-2 text-xs uppercase tracking-[0.16em]" style={{ background: current.accent, color: current.surface }}>
-              Live Theme
-            </span>
-          </div>
-          <div className="grid gap-4 py-6 sm:grid-cols-2">
-            {['Logo', 'Menu', 'Photography', 'Reservations'].map((item) => (
-              <div key={item} className="border border-current/15 p-4">
-                <span className="text-xs uppercase tracking-[0.18em] opacity-55">Configurable</span>
-                <h3 className="mt-8 text-2xl font-semibold">{item}</h3>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+
+          {/* Left: copy + theme picker */}
+          <Reveal>
+            <p className="eyebrow text-[var(--accent)]">Brand System</p>
+            <h2 className="section-title mt-3 text-paper">
+              BUILT AROUND<br />YOUR BRAND.
+            </h2>
+            <p className="mt-6 section-lead max-w-md text-paper/55">
+              Every restaurant gets its own identity — colours, logo, menu,
+              photography, typography, and ordering flow, all in one configurable
+              digital experience.
+            </p>
+
+            {/* Theme selector */}
+            <div className="mt-10">
+              <p className="eyebrow text-paper/35">Brand Colour</p>
+              <div
+                className="mt-4 flex flex-wrap gap-3"
+                role="radiogroup"
+                aria-label="Brand colour theme"
+              >
+                {options.map(([key, theme]) => (
+                  <button
+                    key={key}
+                    role="radio"
+                    aria-checked={activeTheme === key}
+                    onClick={() => onThemeChange(key)}
+                    className={cn(
+                      'flex items-center gap-2.5 rounded-full border px-4 py-2.5 text-sm font-medium transition-all duration-200',
+                      activeTheme === key
+                        ? 'border-white bg-white text-ink shadow-glow'
+                        : 'border-white/12 bg-white/[0.04] text-paper/65 hover:border-white/24 hover:text-paper',
+                    )}
+                  >
+                    <span
+                      className="h-3.5 w-3.5 rounded-full ring-1 ring-white/20"
+                      style={{ background: theme.accent }}
+                    />
+                    {theme.label}
+                  </button>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="h-2" style={{ background: `linear-gradient(90deg, ${current.accent}, ${current.accentSoft})` }} />
+            </div>
+          </Reveal>
+
+          {/* Right: live theme preview card */}
+          <Reveal delay="80ms">
+            <div
+              className="overflow-hidden rounded-xl border shadow-2xl transition-all duration-500"
+              style={{
+                background: current.surface,
+                color: current.text,
+                borderColor: `${current.accent}28`,
+              }}
+            >
+              {/* Preview header */}
+              <div
+                className="flex items-center justify-between border-b px-6 py-5"
+                style={{ borderColor: `${current.text}14` }}
+              >
+                <span className="text-xl font-bold tracking-[0.3em]">NOVA</span>
+                <span
+                  className="rounded-full px-3 py-1.5 text-[0.62rem] font-bold uppercase tracking-[0.18em]"
+                  style={{ background: current.accent, color: current.surface }}
+                >
+                  Live Theme
+                </span>
+              </div>
+
+              {/* Preview grid */}
+              <div className="grid grid-cols-2 gap-3 p-5">
+                {['Logo', 'Menu', 'Photography', 'Reservations'].map((item) => (
+                  <div
+                    key={item}
+                    className="flex flex-col gap-2 rounded-lg border p-4"
+                    style={{ borderColor: `${current.text}12` }}
+                  >
+                    <span
+                      className="text-[0.6rem] uppercase tracking-[0.2em]"
+                      style={{ color: `${current.text}55` }}
+                    >
+                      Configurable
+                    </span>
+                    <span className="mt-4 text-xl font-bold">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Accent gradient strip */}
+              <div
+                className="h-1.5"
+                style={{
+                  background: `linear-gradient(90deg, ${current.accent}, ${current.accentSoft})`,
+                }}
+              />
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

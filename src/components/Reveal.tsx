@@ -8,7 +8,7 @@ type RevealProps = HTMLAttributes<HTMLDivElement> & {
 
 export function Reveal({ children, className, delay = '0ms', ...props }: RevealProps) {
   return (
-    <div className={cn('reveal-up', className)} style={{ transitionDelay: delay }} {...props}>
+    <div className={cn('reveal-up', className)} style={{ animationDelay: delay }} {...props}>
       {children}
     </div>
   );

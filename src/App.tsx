@@ -37,7 +37,9 @@ function App() {
       const existing = current.find((cartItem) => cartItem.id === item.id);
       if (existing) {
         return current.map((cartItem) =>
-          cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem,
+          cartItem.id === item.id
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem,
         );
       }
       return [...current, { ...item, quantity: 1 }];
@@ -52,7 +54,8 @@ function App() {
     );
   };
 
-  const removeCart = (id: string) => setCart((current) => current.filter((item) => item.id !== id));
+  const removeCart = (id: string) =>
+    setCart((current) => current.filter((item) => item.id !== id));
 
   return (
     <div style={themeStyle} className="min-h-screen bg-ink font-body text-paper antialiased">
@@ -64,14 +67,20 @@ function App() {
         <Intro />
         <MenuExperience onAdd={addToCart} />
         <SignatureDish />
-        <OrderExperience cart={cart} onAdd={addToCart} onDecrease={decreaseCart} onRemove={removeCart} />
+        <OrderExperience
+          cart={cart}
+          onAdd={addToCart}
+          onDecrease={decreaseCart}
+          onRemove={removeCart}
+        />
         <RestaurantExperience />
         <Gallery />
         <SocialWorld />
         <Customization activeTheme={theme} onThemeChange={setTheme} />
         <Comparison />
         <Reservation />
-        <section className="bg-paper px-4 pb-16 text-center text-sm text-ink/52 sm:px-6">
+        {/* Demo disclosure */}
+        <section className="bg-charcoal px-4 py-10 text-center text-xs text-paper/30 sm:px-6">
           {restaurantConfig.shortDisclosure}
         </section>
         <FinalCTA />

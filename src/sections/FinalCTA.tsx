@@ -3,27 +3,61 @@ import { Button } from '../components/Button';
 
 export function FinalCTA() {
   const [open, setOpen] = useState(false);
+
   return (
-    <section className="relative overflow-hidden bg-ink px-4 py-24 text-paper sm:px-6 sm:py-32">
-      <div className="absolute inset-0 opacity-45 bg-[radial-gradient(circle_at_50%_10%,rgba(214,95,47,0.26),transparent_30%)]" />
-      <div className="relative mx-auto max-w-7xl">
-        <h2 className="max-w-6xl text-[clamp(3rem,9vw,8.5rem)] font-semibold uppercase leading-[0.9]">
-          YOUR RESTAURANT.<br />YOUR STORY.<br />YOUR DIGITAL EXPERIENCE.
-        </h2>
-        <p className="mt-8 max-w-2xl text-xl leading-8 text-paper/68">
-          One website can turn a customer's first click into their first visit.
-        </p>
-        <Button onClick={() => setOpen(true)} className="mt-8" data-cursor="OPEN">
-          Build Your Experience
-        </Button>
-        {open && (
-          <div className="mt-6 max-w-xl border border-white/12 bg-white/[0.06] p-5 backdrop-blur">
-            <strong>Demo inquiry interface</strong>
-            <p className="mt-2 text-paper/64">
-              This CTA can connect to WhatsApp, email, CRM forms, booking tools, or a full sales inquiry workflow.
-            </p>
+    <section className="relative overflow-hidden bg-ink px-4 py-20 text-paper sm:px-6 sm:py-28">
+      {/* Background accent glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[var(--accent)] opacity-[0.07] blur-[120px]" />
+        <div className="absolute -bottom-32 right-0 h-96 w-96 rounded-full bg-[var(--accent-soft)] opacity-[0.05] blur-[100px]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+
+          {/* Headline */}
+          <div>
+            <p className="eyebrow text-[var(--accent)] mb-5">Ready to build?</p>
+            <h2 className="section-title max-w-xl text-paper">
+              YOUR RESTAURANT.<br />YOUR STORY.<br />YOUR DIGITAL<br />EXPERIENCE.
+            </h2>
           </div>
-        )}
+
+          {/* Right: description + CTA */}
+          <div className="lg:pb-1">
+            <p className="section-lead max-w-sm text-paper/55">
+              One website can turn a customer's first click into their first
+              visit — and their first visit into a loyal regular.
+            </p>
+
+            <Button
+              onClick={() => setOpen((v) => !v)}
+              className="mt-8"
+              data-cursor="OPEN"
+            >
+              Build Your Experience
+            </Button>
+
+            {open && (
+              <div className="mt-5 max-w-sm overflow-hidden rounded-xl border border-white/10 bg-white/[0.05] p-5 backdrop-blur">
+                <p className="text-sm font-bold text-paper">Demo inquiry interface</p>
+                <p className="mt-2 text-sm text-paper/55">
+                  This CTA can connect to WhatsApp, email, a CRM form, booking
+                  tools, or a full sales inquiry workflow — per restaurant.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Bottom brand strip */}
+        <div className="mt-16 flex items-center gap-6 border-t border-white/8 pt-8">
+          <span className="text-2xl font-bold tracking-[0.3em] text-paper/80">NOVA</span>
+          <div className="h-px flex-1 bg-white/8" />
+          <span className="text-[0.62rem] uppercase tracking-[0.24em] text-paper/30">
+            Restaurant Digital Experience
+          </span>
+        </div>
       </div>
     </section>
   );
