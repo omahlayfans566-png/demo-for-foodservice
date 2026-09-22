@@ -38,7 +38,8 @@ export const menuItems: MenuItem[] = [
     price: 7500,
     category: 'RICE',
     badge: 'Chef Pick',
-    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=900&q=82',
+    // Actual Nigerian party jollof rice in a pot — red-orange tomato base, recognisable
+    image: 'https://images.unsplash.com/photo-1665672271822-a3ab5a86f8e0?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'coconut-rice',
@@ -46,7 +47,8 @@ export const menuItems: MenuItem[] = [
     description: 'Fragrant long-grain rice cooked in coconut milk with fresh shrimp, bell peppers and seasoning.',
     price: 7200,
     category: 'RICE',
-    image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=82',
+    // Coconut rice — white pearlescent with shrimp
+    image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'fried-rice',
@@ -55,7 +57,8 @@ export const menuItems: MenuItem[] = [
     price: 7000,
     category: 'RICE',
     badge: 'Fan Fav',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=82',
+    // Nigerian / Asian-style fried rice — colourful with veg
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'asun-rice',
@@ -64,7 +67,8 @@ export const menuItems: MenuItem[] = [
     price: 9800,
     category: 'RICE',
     badge: 'Signature',
-    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=82',
+    // Rice with dark, sticky peppered meat on top
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'pepper-rice',
@@ -72,7 +76,8 @@ export const menuItems: MenuItem[] = [
     description: 'Spiced ofada-style rice with a bold ayamase green pepper stew, assorted proteins and palm oil.',
     price: 8500,
     category: 'RICE',
-    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=900&q=82',
+    // Spiced rice with pepper sauce — warm tones
+    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=900&q=85',
   },
 
   // ── GRILLS ──────────────────────────────────────────────────────────────
@@ -83,7 +88,8 @@ export const menuItems: MenuItem[] = [
     price: 8800,
     category: 'GRILLS',
     badge: 'Spicy',
-    image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=82',
+    // Beef skewers on grill — charred, smoky close-up
+    image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'asun',
@@ -92,7 +98,8 @@ export const menuItems: MenuItem[] = [
     price: 10500,
     category: 'GRILLS',
     badge: 'Hot',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=82',
+    // Charred peppered meat chunks — dark, crispy, glistening
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'grilled-chicken',
@@ -100,7 +107,8 @@ export const menuItems: MenuItem[] = [
     description: 'Half-bird marinated in suya spice, grilled whole. Finished with a pepper-onion sauce and herb oil drizzle.',
     price: 12500,
     category: 'GRILLS',
-    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=82',
+    // Golden-brown whole grilled chicken on grill
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'peppered-meat',
@@ -109,7 +117,8 @@ export const menuItems: MenuItem[] = [
     price: 9200,
     category: 'GRILLS',
     badge: 'Popular',
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=82',
+    // Dark thick pepper stew with chunks of meat
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85',
   },
 
   // ── STARTERS ──────────────────────────────────────────────────────────
@@ -120,7 +129,8 @@ export const menuItems: MenuItem[] = [
     price: 6800,
     category: 'STARTERS',
     badge: 'Party Plate',
-    image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=900&q=82',
+    // Assorted fried snacks / party bites platter
+    image: 'https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'moi-moi',
@@ -128,7 +138,8 @@ export const menuItems: MenuItem[] = [
     description: 'Steamed black-eyed pea pudding packed with boiled egg, crayfish, and minced fish. Rich and deeply satisfying.',
     price: 4800,
     category: 'STARTERS',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=82',
+    // Warm steamed pudding / bean cake in leaf — close-up
+    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'fried-plantain',
@@ -136,17 +147,19 @@ export const menuItems: MenuItem[] = [
     description: 'Sweet ripe plantain, sliced thick and fried golden. Served with a house pepper dipping sauce.',
     price: 3800,
     category: 'STARTERS',
-    image: 'https://images.unsplash.com/photo-1519984388953-d2406bc725e1?auto=format&fit=crop&w=900&q=82',
+    // Golden fried plantain slices — recognisable
+    image: 'https://images.unsplash.com/photo-1609167867399-0e70beb91a01?auto=format&fit=crop&w=900&q=85',
   },
 
-  // ── MAINS ──────────────────────────────────────────────────────────────
+  // ── PASTA ──────────────────────────────────────────────────────────────
   {
     id: 'prawn-linguine',
     name: 'Tiger Prawn Linguine',
     description: 'Jumbo tiger prawns, nduja butter, charred lemon, parsley breadcrumbs. Italian technique, Lagos heat.',
     price: 15800,
     category: 'PASTA',
-    image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=82',
+    // Prawn pasta with herbs — premium plating
+    image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'truffle-pasta',
@@ -155,8 +168,11 @@ export const menuItems: MenuItem[] = [
     price: 13500,
     category: 'PASTA',
     badge: 'Vegetarian',
-    image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=82',
+    // Creamy pasta with mushrooms — restaurant quality
+    image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=85',
   },
+
+  // ── MAINS ──────────────────────────────────────────────────────────────
   {
     id: 'ribeye-steak',
     name: 'Pepper Steak',
@@ -164,7 +180,8 @@ export const menuItems: MenuItem[] = [
     price: 28000,
     category: 'MAINS',
     badge: 'Premium',
-    image: 'https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=82',
+    // Seared ribeye steak with sauce — rich plating
+    image: 'https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=85',
   },
 
   // ── DRINKS ──────────────────────────────────────────────────────────────
@@ -175,7 +192,8 @@ export const menuItems: MenuItem[] = [
     price: 3800,
     category: 'DRINKS',
     badge: 'House Special',
-    image: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=900&q=82',
+    // Deep red hibiscus drink / red cocktail in glass
+    image: 'https://images.unsplash.com/photo-1560508180-03f285f67ded?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'cold-brew',
@@ -183,7 +201,8 @@ export const menuItems: MenuItem[] = [
     description: 'Single-origin Nigerian Plateau coffee, 24-hour cold brew, poured over coconut milk foam.',
     price: 4500,
     category: 'DRINKS',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=82',
+    // Cold brew coffee in glass with foam
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85',
   },
 
   // ── DESSERTS ──────────────────────────────────────────────────────────
@@ -194,7 +213,8 @@ export const menuItems: MenuItem[] = [
     price: 7200,
     category: 'DESSERTS',
     badge: 'House Made',
-    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=82',
+    // Elegant plated cheesecake slice with garnish
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'puff-puff-sundae',
@@ -202,7 +222,8 @@ export const menuItems: MenuItem[] = [
     description: 'Warm sugared puff puff bites, vanilla bean ice cream, salted caramel, crushed kuli kuli.',
     price: 6500,
     category: 'DESSERTS',
-    image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=82',
+    // Donut-style fried bites / ice cream dessert
+    image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85',
   },
 ];
 

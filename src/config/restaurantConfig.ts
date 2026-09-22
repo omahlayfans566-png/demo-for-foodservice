@@ -18,12 +18,12 @@ export const restaurantConfig = {
   },
   hours: ['Mon–Thu 11:00–22:00', 'Fri–Sun 11:00–00:00'],
   links: ['Experience', 'Menu', 'Gallery', 'Reserve', 'Order'],
-  // Nigerian jollof rice spread with proteins — warm, smoky, rich
+  // Cinematic African food spread — warm, rich, premium close-up plating
   heroImage:
-    'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1800&q=85',
-  // Grilled chicken / peppered protein hero plate
+    'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1800&q=88',
+  // Signature grilled peppered chicken plating — hero feature
   signatureImage:
-    'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1800&q=85',
+    'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=1800&q=88',
 };
 
 export const themes: Record<

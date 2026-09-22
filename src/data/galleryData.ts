@@ -12,41 +12,47 @@ export const galleryItems: GalleryItem[] = [
     title: 'Party jollof, served hot',
     type: 'Food',
     layout: 'wide',
-    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1200&q=82',
+    // Nigerian party jollof rice — red-orange, recognisable
+    image: 'https://images.unsplash.com/photo-1665672271822-a3ab5a86f8e0?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    id: 'grill-station',
-    title: 'Live fire grill station',
-    type: 'Dining',
+    id: 'peppered-meat',
+    title: 'Peppered asun — charcoal finished',
+    type: 'Food',
     layout: 'tall',
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=82',
+    // Dark, crispy charred meat close-up
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'zobo-drinks',
     title: 'House zobo cocktails',
     type: 'Drink',
     layout: 'square',
-    image: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=900&q=82',
+    // Deep red drink in glass — hibiscus / zobo look
+    image: 'https://images.unsplash.com/photo-1560508180-03f285f67ded?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'dining-room',
     title: 'Premium dining atmosphere',
     type: 'Interior',
     layout: 'wide',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=82',
+    // Warm lit restaurant interior
+    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    id: 'small-chops',
-    title: 'Small chops service',
+    id: 'suya-grill',
+    title: 'Suya — live grill station',
     type: 'Food',
     layout: 'square',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=82',
+    // Beef skewers on fire grill
+    image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=85',
   },
   {
-    id: 'suya-closeup',
-    title: 'Suya — charcoal finished',
-    type: 'Food',
+    id: 'grilled-chicken',
+    title: 'Peppered grilled chicken',
+    type: 'Dining',
     layout: 'tall',
-    image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=82',
+    // Golden grilled chicken close-up
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=85',
   },
 ];
